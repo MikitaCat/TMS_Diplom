@@ -1,0 +1,55 @@
+.tasks {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden !important;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-header {
+        margin-top: 5vh;
+        font-size: 36px;
+        font-weight: 700;
+        color: white;
+    }
+
+    &-main {
+        width: 100%;
+        margin-top: 10vh;
+        display: flex;
+        justify-content: space-around;
+
+        &-col {
+            width: 25%;
+
+            &-unImportant, &-important, &-veryImportant {
+                cursor: pointer;
+                font-size: 30px;
+                font-weight: 650;
+                margin-bottom: 30px;
+                opacity: 0.5;
+
+                &:hover {
+                    opacity: 1;
+                }
+                
+                @media (max-width: 1440px) {
+                    margin-top: 50px;
+                }
+            }
+
+            &-unImportant {
+                color: green;
+            }
+
+            &-important {
+                color: yellow;
+            }
+
+            &-veryImportant {
+                color: red;
+            }
+        }
+    }
+}

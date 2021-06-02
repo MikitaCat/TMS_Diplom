@@ -1,0 +1,22 @@
+.task-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &-error {
+        width: 100%;
+        display: inline-block;
+        text-align: start;
+        color: red;
+    }
+}
+
+.input-add {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid lightblue;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    opacity: 0.7;  
+}
